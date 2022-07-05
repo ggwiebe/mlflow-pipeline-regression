@@ -16,7 +16,7 @@
 
 from mlflow.pipelines import Pipeline
 
-p = Pipeline(profile="databricks")
+p = Pipeline(profile="ggw-databricks")
 
 # COMMAND ----------
 
@@ -63,3 +63,7 @@ test_data.describe()
 
 trained_model = p.get_artifact("model")
 print(trained_model)
+
+# COMMAND ----------
+
+
